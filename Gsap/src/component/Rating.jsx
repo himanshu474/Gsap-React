@@ -6,30 +6,39 @@ import Star from "../assets/motionarteffect-img4.png"
 
 const Rating = () => {
   return (
-    <div className='flex flex-col justify-center items-center '>
-      <p className='mt-12 mb-20 text-white text-lg text-center'>Trusted by thousands of users around the world</p>
-      <div className='flex items-center justify-center'>
-      <img src={Envato} alt=''/>
-      <img  className="-mt-6 p-2 "src={Star} alt=""/>
+    <div className="container mx-auto text-center">
+    <p className="my-20 font-Sora text-gray-300 text-lg">Trusted by thousands of users around the world</p>
+    <div className="flex flex-wrap justify-center">
+      <div className="w-full sm:1/4 lg:w-1/3 p-4">
+        <div className="flex items-center justify-center mb-4">
+          <img src={Envato} alt="Image 1" className="mr-4" />
+          <div>
+            <img src={Star} alt="Star Rating 1" className=" mb-1" />
+            <p className='text-gray-300 font-Sora font-bold'>4.5 Score, 9 Reviews</p>
+          </div>
+        </div>
       </div>
-      <div className='-mt-9 ml-24 mb-12'>
-      <h2 className='text-gray-300 font-extrabold font-Sora'>4.5 Score,9 Reviews</h2>
+      <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+        <div className="flex items-center justify-center mb-4">
+          <img src={G2} alt="Image 2" className="mr-4" />
+          <div>
+            <img src={Star} alt="Star Rating 2" className="mb-1" />
+            <p  className='text-gray-300 font-Sora font-bold'>4.5 Score, 9 Reviews</p>
+          </div>
+        </div>
       </div>
-      <div className='flex  items-center justify-center'>
-      <img src={G2} alt=''/>
-      <img  className="-mt-6 p-2 "src={Star} alt=""/>
+      <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+        <div className="flex items-center justify-center mb-4">
+          <img src={Wordpress} alt="Image 3" className="mr-4" />
+          <div>
+            <img src={Star} alt="Star Rating 3" className=" mb-1" />
+            <p  className='text-gray-300 font-Sora font-bold'>4.5 Score, 9 Reviews</p>
+          </div>
+        </div>
       </div>
-      <div className='-mt-9 ml-24 mb-12'>
-      <h2 className='text-gray-300 font-extrabold font-Sora'>4.5 Score,9 Reviews</h2>
-      </div>
-      <div className='flex  items-center justify-center'>
-      <img src={Wordpress} alt=''/>
-      <img  className="-mt-6 p-2 "src={Star} alt=""/>
-      </div>
-      <div className='-mt-9 ml-24 mb-12'>
-      <h2 className='text-gray-300 font-extrabold font-Sora'>4.5 Score,9 Reviews</h2>
-      </div>
-      </div>
+     
+    </div>
+  </div>
   )
 }
 
